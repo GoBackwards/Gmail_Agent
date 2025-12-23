@@ -1,0 +1,18 @@
+[project]
+name = "gmail-agent-backend"
+version = "0.1.0"
+description = "FastAPI backend scaffold for Gmail Agent."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.110.0",
+    "pydantic>=2.0.0",
+    "uvicorn[standard]>=0.27.0",
+]
+
+[tool.uvicorn]
+factory = false
+
+[build-system]
+requires = ["setuptools>=67.0"]
+build-backend = "setuptools.build_meta"
+*** End Patch
